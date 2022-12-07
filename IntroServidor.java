@@ -3,8 +3,13 @@ package proyU;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
+
+/*
+¿Qué sucede si se manda un mensaje a un cliente que no está disponible?
+R.- Por lo realizado en la linas 53 a 58, los metodos chat (linea 68) y avisar (linea 88), solo salta una excepción y se avisa que no se pudo conectar.
+¿Cómo se administra un mensaje que se mandó a un cliente no disponible y en un determinado momento se conecta, se le hace llegar el mensaje o no?
+R.- El mensaje se pierde, no se envia al receptor cuando este se conecta.
+ */
 
 public class IntroServidor {
     public static void main(String[] args) {
