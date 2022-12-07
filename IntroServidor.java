@@ -88,7 +88,7 @@ class Servidor implements Runnable{
 
         datos.setIp(7780);
         datos.setNombre("SERVIDOR");
-        datos.setMensaje("No se pudo conectar con ("+paquete_recibido.getDestino()+") :c");
+        datos.setMensaje("No se pudo conectar con ("+paquete_recibido.getDestino()+") :'(");
         datos.setDestino(paquete_recibido.getDestino());
 
         ObjectOutputStream paquete_datos = new ObjectOutputStream(s.getOutputStream());
